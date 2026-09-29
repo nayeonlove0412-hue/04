@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main (int argc, char *argv[]) {
-    int sec;
-    int minute, second;
-    printf("input the second :");
-    scanf("%d", &sec);
-    minute = sec / 60;
-    second = sec % 60;
-    printf("the time is %d : %d\n", minute, second);
+    int year;
+    
+    printf("input the year :");
+    scanf("%d", &year);
+    
+    printf("is the year %i the leap year? : %i\n", year, (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
     return 0;
 }
